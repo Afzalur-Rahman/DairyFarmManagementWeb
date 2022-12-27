@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell</title>
+    <style>
+        form input{
+            width: 70%;
+            display:grid;
+            padding: 12px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 3px solid pink;
+            border-radius: 8px;
+            box-shadow: 20px 0px 30px #f6cfd5;
+        }
+        .sectionclass{
+            margin-top: 30px;
+            margin-left: 10%;
+            padding-top: 15px;
+            box-sizing: border-box;
+            border: 3px solid pink;
+            border-radius: 8px;
+            box-shadow: 10px 0px 10px 10px #f6cfd5;
+            width: 80%;
+            
+
+        }
+        form input:hover{
+            width: 90%;
+            height: 10vh;
+            font-size: 150%;
+            color: orange;
+               
+        }
+        @keyframes animation {
+          0% { transform: translate(1px, 1px) rotate(0deg); }
+         10% { transform: translate(-1px, -2px) rotate(-1deg); }
+         20% { transform: translate(-3px, 0px) rotate(1deg); }
+         30% { transform: translate(3px, 2px) rotate(0deg); }
+         40% { transform: translate(1px, -1px) rotate(1deg); }
+         50% { transform: translate(-1px, 2px) rotate(-1deg); }
+         60% { transform: translate(-3px, 1px) rotate(0deg); }
+         70% { transform: translate(3px, 1px) rotate(-1deg); }
+         80% { transform: translate(-1px, -1px) rotate(1deg); }
+         90% { transform: translate(1px, 2px) rotate(0deg); }
+         100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+        label{
+            color: black;
+            margin-left: 8px;
+            font-size:20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        button{
+            background-color: orange;
+            color: white;
+            width: 200px;
+            height: 6vh;
+            margin-top: 20px;
+            margin-left: 42%;
+            margin-bottom: 20px;
+            border-bottom: 5px solid black;
+            border-right: 5px solid black;
+            box-shadow: 10px 10px 30px 1px gray;
+            text-align: center;
+            font-size: 20px;
+            font-weight:bold;
+            border-radius: 50%;
+        
+        }
+        button:hover{
+            width: 200px;
+            height: 6vh;
+            border-radius: 0%;
+            transition: .4s;
+            animation: animation 1s;
+            font-size: 30px;
+            border-bottom: 5px solid red;
+            border-right: 5px solid red;
+            background-color: cadetblue;
+
+        }
+   
+        .div01{
+            padding-left: 22%;
+            
+
+        }
+    
+       .RadioPoint{
+            color: black;
+            margin-left: 8px;
+            font-size:20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            line-height: 25px;
+       }
+
+       .sex{
+            width: 70%;
+            padding: 12px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 3px solid pink;
+            border-radius: 8px;
+            box-shadow: 20px 0px 30px #f6cfd5;
+       }
+       .details{
+            width: 70%;
+            height: 12vh;
+            display:grid;
+            padding: 12px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 3px solid pink;
+            border-radius: 8px;
+            box-shadow: 20px 0px 30px #f6cfd5;
+
+       }
+       .details:hover{
+            width: 90%;
+            height: 15vh;
+            font-size: 150%;
+            color: orange;
+       }
+        
+    </style>
+</head>
+<body>
+   
+    <div class="sectionclass">
+        <div class="grid-container">
+            <div class="div01" >
+                <form action="sellconnect.php" method="post">
+                    <label for="ID">ID</label>
+                    <input type="text" placeholder="Animal ID" name="aid">
+                    <label for="ID">Seller's ID</label>
+                    <input type="text" placeholder="Seller's ID" name="sid">
+                    <label for="birthdate">Selling Date</label>
+                    <input type="date" name="sdate">
+                    <label for="BirthTime">Time</label><br>
+                    <input type="time" name="time">
+                    <label for="ID">Price</label>
+                    <input type="text" placeholder="Selling price" name="price">
+                
+                 <div class="sex">   
+                    <label class="RadioPoint" for="sex">Product</label><br>
+                    <input type="radio" id="sex1" name="product" value="milk">
+                    <label class="RadioPoint" for="milk">Milk</label><br>
+                    <input type="radio" id="sex2" name="product" value="animal">
+                    <label class="RadioPoint" for="animal">Animal</label><br>
+                    </div>
+                    <label for="Text">Details</label>
+                    <input class="details" type="text" placeholder="Details if needed" name="details">
+            </div>
+        
+           
+        </div>
+        
+        
+            <input type="submit"  value="submit">
+    </div>
+</form>
+    
+   
+</body>
+</html>
